@@ -65,7 +65,7 @@ body{
 }
 .heading_primary{
     text-transform: uppercase;
-    background-image: radial-gradient(#AEEA00,#F50057);
+    background-image: radial-gradient(#F50057,#FF1744);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -75,7 +75,7 @@ body{
 .heading_primary--main{
     display: block;
     font-size: 6rem;
-    font-weight: 400;
+    font-weight: 700;
     letter-spacing: 1rem;
 }
 .heading_primary--sub{
