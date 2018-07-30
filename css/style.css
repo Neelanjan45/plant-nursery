@@ -6,8 +6,9 @@
 #000000--color-black
 #FFFFFF--color-white
 #F50057--color-pink
+#FF1744--color-red
 #D500F9--color-purple
-#D50000--color-red
+#D50000--color-red-dark
 #4E342E--color-brown-dark
 #BF360C--color-deeporange-dark
 
@@ -254,50 +255,50 @@ body{
 }
 
 /* contact section style */
+
 .contact_section{
-    padding: 20rem 0;
+    padding: 15rem 0;
     margin-top: -10rem;
-    background-image:radial-gradient(rgba(255, 255, 255, 0.301),
-    rgba(139, 195, 74, 0.404)), url(../image/contact.jpg);
-    background-size: cover;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
     position: relative;
-    height: 60rem;
+    /* background-image: linear-gradient(to right bottom,
+    rgba(27, 94, 31, 0.801),rgba(176, 234, 0, 0.801)); */
 }
-.u-margin-bottom-large{
-    margin-bottom: 8rem;
+.contact{
+    background-image: linear-gradient(75deg,
+    rgba(255, 255, 255, 0.904) 0%,
+    rgba(255, 255, 255, 0.904) 50%,
+    transparent 50%), url(../image/contact.jpg);
+    background-size: 100%;
+    height: 50rem;
 }
-.heading_tertiary{
+.contact_box{
+    width: 50%;
+    padding: 6rem;
+    height: 100%;
+    position: relative;
+}
+.contact_text{
     text-transform: uppercase;
-    font-size: 4rem;
-    font-weight: 700;
-    margin-top: -10rem;
-    letter-spacing: 1rem;
-    color: #AEEA00;
-    /* background-image: linear-gradient(to right,#1B5E20,#AEEA00);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent; */
-} 
-.text-box{
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: .2rem;
+    line-height: 2.5;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 2.8rem;
-    font-weight: 400;
-    letter-spacing: 1rem;
-    /* padding: 3rem 0; */
-    line-height: 2.5;
-    margin-top: 5rem;
-    background-image: linear-gradient(to right,#EEEEEE,#FFFFFF);
+
     -webkit-background-clip: text;
     background-clip: text;
+    background-image: linear-gradient(to right,#F50057,
+    #FF1744);
     color: transparent;
 }
+.pname{
+    font-size: 4.5rem;
+    text-align: center;
+}
+
 
 /* footer style */
 .footer{
@@ -306,7 +307,7 @@ body{
     font-size: 1.5rem;
     color: #AEEA00;
     /* position: relative; */
-    /* margin-top: 5rem; */
+    margin-top: 1rem;
 }
 .footer_navigation{
     border-top: .1rem solid #AEEA00;
