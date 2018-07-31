@@ -85,6 +85,47 @@ body{
     letter-spacing: .5rem;
 }
 
+/* navigation item */
+.navbar{
+    display: inline-block;
+    background-color: #1B5E20;
+    padding: 1rem 0;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar-list{
+    list-style: none;
+}
+.navbar-item{
+    display: inline-block;
+}
+.navbar-link:link,
+.navbar-link:visited{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 400;
+    /* color: #F50057; */
+    display: inline-block;
+    padding: 0 2rem;
+    background-image: radial-gradient(#FFFFFF,#AEEA00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: all .2s;
+}
+.navbar-link:hover{
+    color: #AEEA00;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+.navbar+.footer{
+    margin-top: 5rem;
+}
+
 /* product section style */
 .product_section{
     padding: 20rem 0;
