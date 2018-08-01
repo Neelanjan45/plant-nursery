@@ -207,7 +207,7 @@ body{
 }
 @media screen and (max-width: 18.75em){
     .product_section{
-        padding: 10rem 0;
+        padding: 15rem 0;
         margin-top: -6rem;
     }
 }
@@ -374,6 +374,31 @@ body{
     rgba(27, 94, 31, 0.801),rgba(176, 234, 0, 0.801));
 }
 
+@media screen and (max-width: 18.75em){
+    .card{
+        height: auto;
+        border-radius: .3rem;
+    }
+    .card_side{
+        height: auto;
+        position: relative;
+        
+    }
+    .card_side--back{
+        transform: rotateY(0);
+    }
+    .card:hover .card_side--front{
+        transform: rotateY(0);
+    }
+    .card_cta{
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0);
+        width: 100%;
+    }
+}
+
 /* contact section style */
 
 .contact_section{
@@ -383,7 +408,7 @@ body{
 }
 @media screen and (max-width: 18.75em){
     .contact_section{
-        padding: 10rem 0;
+        padding: 6rem 0;
     }
 }
 .contact{
@@ -394,11 +419,26 @@ body{
     background-size: 100%;
     height: 50rem;
 }
+@media screen and (max-width: 18.75em){
+    .contact{
+        background-image: linear-gradient(to right,
+    rgba(255, 255, 255, 0.904) 0%,
+    rgba(255, 255, 255, 0.904) 100%), 
+    url(../image/contact.jpg);
+    background-size: cover;
+    }
+}
 .contact_box{
     width: 50%;
     padding: 6rem;
     height: 100%;
     position: relative;
+}
+@media screen and (max-width: 18.75em){
+    .contact_box{
+        width: 100%;
+        padding: 3rem;
+    }
 }
 .contact_text{
     text-transform: uppercase;
