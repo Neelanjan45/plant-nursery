@@ -59,7 +59,7 @@ body{
     font-family: "Lato",sans-serif;
     line-height: 1.7;
 }
-@media screen and (max-width: 56.25em){
+@media screen and (max-width: 37.5em){
     body{
         padding: 0;
     }
@@ -76,9 +76,9 @@ body{
     backface-visibility: hidden;
     transition: all .2s ease-out;
 }
-@media screen and (max-width: 18.75em){ 
+@media screen and (max-width: 37.5em){ 
     .header{
-        height: 65vh;
+        height: 75vh;
     }
 }
 .header_logo-box{
@@ -86,24 +86,19 @@ body{
     top: 4rem;
     left: 5rem;
 }
-@media screen and (max-width: 56.25em){
+@media screen and (max-width: 37.5em){
     .header_logo-box{
         top: 2rem;
-        left: 3rem;
+        left: 2rem;
     }
 }
-@media screen and (max-width: 18.75em){
-    .header_logo-box{
-        top: 1rem;
-        left: 1rem;
-    }
-}
+
 .header_logo{
     height: 10rem;
 }
-@media screen and (max-width: 18.75em){
+@media screen and (max-width: 37.5em){
     .header_logo{
-        height: 5rem;
+        height: 6rem;
     }
 }
 .header_text-box{
@@ -128,7 +123,7 @@ body{
     font-weight: 700;
     letter-spacing: 1rem;
 }
-@media screen and (max-width: 56.25em){
+@media screen and (max-width: 37.5em){
     .heading_primary--main{
         font-size: 4.5rem;
         letter-spacing: .5rem;
@@ -140,7 +135,7 @@ body{
     font-weight: 700;
     letter-spacing: .5rem;
 }
-@media screen and (max-width: 56.25em){
+@media screen and (max-width: 37.5em){
     .heading_primary--sub{
         font-size: 2rem;
         letter-spacing: 0;
@@ -157,7 +152,7 @@ body{
     top: 0;
     z-index: 100;
 }
-@media screen and (max-width: 18.75em){
+@media screen and (max-width: 37.5em){
     .navbar{
         padding: .5rem 0;
     }
@@ -184,10 +179,10 @@ body{
     backface-visibility: hidden;
     transition: all .2s;
 }
-@media screen and (max-width: 18.75em){
+@media screen and (max-width: 37.5em){
     .navbar-link:link,
     .navbar-link:visited{
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         font-weight: 700;
         padding: 0 .5rem;
     }
@@ -205,7 +200,7 @@ body{
     padding: 20rem 0;
     margin-top: -10rem;
 }
-@media screen and (max-width: 18.75em){
+@media screen and (max-width: 37.5em){
     .product_section{
         padding: 15rem 0;
         margin-top: -6rem;
@@ -217,7 +212,7 @@ body{
 .u-margin-bottom-medium{
     margin-bottom: 6rem;
 }
-@media screen and (max-width: 18.75em){
+@media screen and (max-width: 37.5em){
     .u-margin-bottom-medium{
         margin-bottom: 3rem;
     }
@@ -233,7 +228,7 @@ body{
     background-image: linear-gradient(to right,rgba(139, 195, 74, 0.7),rgba(176, 234, 0, 0.7));
     color: transparent;
 }
-@media screen and (max-width: 18.75em){
+@media screen and (max-width: 37.5em){
     .heading_secondary{
         font-size: 3.5rem;
         letter-spacing: .2rem;
@@ -374,7 +369,7 @@ body{
     rgba(27, 94, 31, 0.801),rgba(176, 234, 0, 0.801));
 }
 
-@media screen and (max-width: 18.75em){
+@media screen and (max-width: 37.5em){
     .card{
         height: auto;
         border-radius: .3rem;
@@ -406,7 +401,7 @@ body{
     margin-top: -10rem;
     position: relative;
 }
-@media screen and (max-width: 18.75em){
+@media screen and (max-width: 37.5em){
     .contact_section{
         padding: 6rem 0;
     }
@@ -419,7 +414,7 @@ body{
     background-size: 100%;
     height: 50rem;
 }
-@media screen and (max-width: 18.75em){
+@media screen and (max-width: 37.5em){
     .contact{
         background-image: linear-gradient(to right,
     rgba(255, 255, 255, 0.904) 0%,
@@ -434,7 +429,7 @@ body{
     height: 100%;
     position: relative;
 }
-@media screen and (max-width: 18.75em){
+@media screen and (max-width: 37.5em){
     .contact_box{
         width: 100%;
         padding: 3rem;
@@ -474,7 +469,7 @@ body{
     color: #AEEA00;
     margin-top: 1rem;
 }
-@media screen and (max-width: 18.75em){
+@media screen and (max-width: 37.5em){
     .footer{
         padding: 6rem 0;
         font-size: 2rem;
@@ -490,7 +485,7 @@ body{
     color: transparent;
     backface-visibility: hidden;
 }
-@media screen and (max-width: 18.75em){
+@media screen and (max-width: 37.5em){
     .heading_tertiary{
         font-size: 3rem;
     }
@@ -500,7 +495,7 @@ body{
     padding-top: 2rem;
     display: inline-block;
 }
-@media screen and (max-width: 18.75em){
+@media screen and (max-width: 37.5em){
     .footer_navigation{
         width: 100%;
         text-align: center;
@@ -534,7 +529,7 @@ body{
     float: right;
     text-align: center;
 }
-@media screen and (max-width: 18.75em){
+@media screen and (max-width: 37.5em){
     .footer_copyright{
         float: none;
         width: 100%;
@@ -547,7 +542,7 @@ body{
     width: 30%;
     margin-top: 2rem;
 }
-@media screen and (max-width: 18.75em){
+@media screen and (max-width: 37.5em){
     .footer_navigation-social{
         width: 80%;
     }
@@ -557,7 +552,7 @@ body{
     font-size: 3.5rem;
     padding: 0 2rem;
 }
-@media screen and (max-width: 18.75em){
+@media screen and (max-width: 37.5em){
     .footer_item-social{
         font-size: 3rem;
         padding: 0 1.5rem;
@@ -579,7 +574,7 @@ body{
     max-width: 114rem;
     margin: 0 auto;
 }
-@media screen and (max-width: 18.75em){
+@media screen and (max-width: 37.5em){
     .row{
         max-width: 50rem;
     }
@@ -588,7 +583,7 @@ body{
 .row:not(:last-child){
     margin-bottom: 6rem;
 }
-@media screen and (max-width: 18.75em){
+@media screen and (max-width: 37.5em){
     .row:not(:last-child){
         margin-bottom: 3rem;
     }
@@ -598,7 +593,7 @@ body{
     float: left;
     /* background-color: orangered; */
 }
-@media screen and (max-width: 18.75em){
+@media screen and (max-width: 37.5em){
     .row [class^="col-"]{
         width: 100% !important;
     }
@@ -607,7 +602,7 @@ body{
 .row [class^="col-"]:not(:last-child){
     margin-right: 4rem;
 }
-@media screen and (max-width: 18.75em){
+@media screen and (max-width: 37.5em){
     .row [class^="col-"]:not(:last-child){
         margin-right: 0;
         margin-bottom: 3rem;
