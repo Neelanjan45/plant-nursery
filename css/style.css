@@ -27,6 +27,29 @@ gutter-vertical: .6rem
 html{
     font-size: 62.5%; /*1rem = 10px; font-size = 16;*/
 }
+@media screen and (max-width: 75em){ 
+    html{
+        font-size: 56.25%;/*1200px // tablet-landscape*/
+    }
+}
+@media screen and (max-width: 56.25em){ 
+    html{
+        font-size: 50%;/*900px // tablet-portrait*/
+    }
+}
+@media screen and (max-width: 37.5em){ 
+    html{
+        font-size: 37.5%;/*600px // phone*/
+    }
+}
+@media screen and (min-width: 112.5em){ 
+    html{
+        font-size: 75%;/*1800px+ // big-desktop*/
+    }
+}
+
+
+
 
 body{
     box-sizing: border-box;
@@ -35,6 +58,11 @@ body{
     font-weight: 400;
     font-family: "Lato",sans-serif;
     line-height: 1.7;
+}
+@media screen and (max-width: 56.25em){
+    body{
+        padding: 0;
+    }
 }
 
 /* header section style */
@@ -48,13 +76,35 @@ body{
     backface-visibility: hidden;
     transition: all .2s ease-out;
 }
+@media screen and (max-width: 18.75em){ 
+    .header{
+        height: 65vh;
+    }
+}
 .header_logo-box{
     position: absolute;
     top: 4rem;
     left: 5rem;
 }
+@media screen and (max-width: 56.25em){
+    .header_logo-box{
+        top: 2rem;
+        left: 3rem;
+    }
+}
+@media screen and (max-width: 18.75em){
+    .header_logo-box{
+        top: 1rem;
+        left: 1rem;
+    }
+}
 .header_logo{
     height: 10rem;
+}
+@media screen and (max-width: 18.75em){
+    .header_logo{
+        height: 5rem;
+    }
 }
 .header_text-box{
     position: absolute;
@@ -78,14 +128,26 @@ body{
     font-weight: 700;
     letter-spacing: 1rem;
 }
+@media screen and (max-width: 56.25em){
+    .heading_primary--main{
+        font-size: 4.5rem;
+        letter-spacing: .5rem;
+    }
+}
 .heading_primary--sub{
     display: block;
     font-size: 3rem;
     font-weight: 700;
     letter-spacing: .5rem;
 }
+@media screen and (max-width: 56.25em){
+    .heading_primary--sub{
+        font-size: 2rem;
+        letter-spacing: 0;
+    }
+}
 
-/* navigation item */
+/* navigation style */
 .navbar{
     display: inline-block;
     background-color: #1B5E20;
@@ -93,7 +155,12 @@ body{
     width: 100%;
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 100;
+}
+@media screen and (max-width: 18.75em){
+    .navbar{
+        padding: .5rem 0;
+    }
 }
 .navbar-list{
     list-style: none;
@@ -109,13 +176,21 @@ body{
     font-weight: 400;
     display: inline-block;
     padding: 0 2rem;
-    background-image: radial-gradient(#FFFFFF,#AEEA00);
+    background-image: radial-gradient(#1B5E20,#AEEA00);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transition: all .2s;
+}
+@media screen and (max-width: 18.75em){
+    .navbar-link:link,
+    .navbar-link:visited{
+        font-size: 1.7rem;
+        font-weight: 700;
+        padding: 0 .5rem;
+    }
 }
 .navbar-link:hover{
     color: #AEEA00;
@@ -130,11 +205,22 @@ body{
     padding: 20rem 0;
     margin-top: -10rem;
 }
+@media screen and (max-width: 18.75em){
+    .product_section{
+        padding: 10rem 0;
+        margin-top: -6rem;
+    }
+}
 .u-center-text{
     text-align: center;
 }
 .u-margin-bottom-medium{
     margin-bottom: 6rem;
+}
+@media screen and (max-width: 18.75em){
+    .u-margin-bottom-medium{
+        margin-bottom: 3rem;
+    }
 }
 .heading_secondary{
     text-transform: uppercase;
@@ -146,6 +232,12 @@ body{
     background-clip: text;
     background-image: linear-gradient(to right,rgba(139, 195, 74, 0.7),rgba(176, 234, 0, 0.7));
     color: transparent;
+}
+@media screen and (max-width: 18.75em){
+    .heading_secondary{
+        font-size: 3.5rem;
+        letter-spacing: .2rem;
+    }
 }
 .card{
     height: 35rem;
@@ -289,6 +381,11 @@ body{
     margin-top: -10rem;
     position: relative;
 }
+@media screen and (max-width: 18.75em){
+    .contact_section{
+        padding: 10rem 0;
+    }
+}
 .contact{
     background-image: linear-gradient(75deg,
     rgba(255, 255, 255, 0.904) 0%,
@@ -337,6 +434,12 @@ body{
     color: #AEEA00;
     margin-top: 1rem;
 }
+@media screen and (max-width: 18.75em){
+    .footer{
+        padding: 6rem 0;
+        font-size: 2rem;
+    }
+}
 .heading_tertiary{
     text-transform: uppercase;
     font-size: 3.5rem;
@@ -347,10 +450,21 @@ body{
     color: transparent;
     backface-visibility: hidden;
 }
+@media screen and (max-width: 18.75em){
+    .heading_tertiary{
+        font-size: 3rem;
+    }
+}
 .footer_navigation{
     border-top: .1rem solid #AEEA00;
     padding-top: 2rem;
     display: inline-block;
+}
+@media screen and (max-width: 18.75em){
+    .footer_navigation{
+        width: 100%;
+        text-align: center;
+    }
 }
 .footer_list{
     list-style: none;
@@ -378,6 +492,13 @@ body{
     padding-top: 2rem;
     width: 80%;
     float: right;
+    text-align: center;
+}
+@media screen and (max-width: 18.75em){
+    .footer_copyright{
+        float: none;
+        width: 100%;
+    }
 }
 .footer_navigation-social{
     display: inline-block;
@@ -386,10 +507,21 @@ body{
     width: 30%;
     margin-top: 2rem;
 }
+@media screen and (max-width: 18.75em){
+    .footer_navigation-social{
+        width: 80%;
+    }
+}
 .footer_item-social{
     display: inline-block;
     font-size: 3.5rem;
     padding: 0 2rem;
+}
+@media screen and (max-width: 18.75em){
+    .footer_item-social{
+        font-size: 3rem;
+        padding: 0 1.5rem;
+    }
 }
 
 
@@ -397,25 +529,51 @@ body{
 /* .grid-test{
     background-color: #ffffff;
 } */
-.row{
-    max-width: 114rem;
-    margin: 0 auto;
-}
-.row:not(:last-child){
-    margin-bottom: 6rem;
-}
+
 .row::after{
     content: "";
     display: table;
     clear: both;
 }
+.row{
+    max-width: 114rem;
+    margin: 0 auto;
+}
+@media screen and (max-width: 18.75em){
+    .row{
+        max-width: 50rem;
+    }
+}
+
+.row:not(:last-child){
+    margin-bottom: 6rem;
+}
+@media screen and (max-width: 18.75em){
+    .row:not(:last-child){
+        margin-bottom: 3rem;
+    }
+}
+
 .row [class^="col-"]{
     float: left;
     /* background-color: orangered; */
 }
+@media screen and (max-width: 18.75em){
+    .row [class^="col-"]{
+        width: 100% !important;
+    }
+}
+
 .row [class^="col-"]:not(:last-child){
     margin-right: 4rem;
 }
+@media screen and (max-width: 18.75em){
+    .row [class^="col-"]:not(:last-child){
+        margin-right: 0;
+        margin-bottom: 3rem;
+    }
+}
+
 .col-1-of-2{
     width: calc((100% - 4rem)/2);
 }
