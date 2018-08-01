@@ -279,7 +279,7 @@ body{
 }
 .card_picture{
     background-size: cover;
-    height: 100%;
+    height: 35rem;
     background-position: top;
     background-blend-mode: screen;
 }
@@ -384,6 +384,11 @@ body{
     }
     .card:hover .card_side--front{
         transform: rotateY(0);
+    }
+    .card_details{
+        padding: 1.5rem;
+        margin-bottom: 4rem;
+        margin-top: 0;
     }
     .card_cta{
         position: relative;
@@ -499,6 +504,10 @@ body{
     .footer_navigation{
         width: 100%;
         text-align: center;
+        border-top: 0;
+        padding-top: 0;
+        border-bottom: .1rem solid #AEEA00;
+        padding-bottom: 2rem;
     }
 }
 .footer_list{
@@ -533,6 +542,10 @@ body{
     .footer_copyright{
         float: none;
         width: 100%;
+        border-top: 0;
+        padding-top: 0;
+        border-bottom: .1rem solid #AEEA00;
+        padding-bottom: 2rem;
     }
 }
 .footer_navigation-social{
